@@ -19,7 +19,7 @@ main(int argc, char *argv[])
 	inputFd = open(argv[1], O_RDONLY);
 	if( inputFd == - 1)
 		errExit("opening file %s", argv[1]);
-	openFlags = O_CREAT | O_WRONLY | O_TRUNC;
+	openFlags = O_CREAT | O_WRONLY;
 	filePerms = S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP |
 	S_IROTH | S_IWOTH;
 	outputFd = open(argv[2], openFlags, filePerms);

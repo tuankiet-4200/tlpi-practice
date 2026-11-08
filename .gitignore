@@ -2,3 +2,5 @@
 /main
 core
 core.*
+/chapter04/test_stdout
+/output.txt
